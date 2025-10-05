@@ -1,0 +1,131 @@
+/* Reset simples */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: 40%;   
+        padding: 15px;
+    }
+
+    .bg-image {
+        margin-left: 40%; /* acompanha o container */
+    }
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    height: 100vh;
+}
+
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;   
+    min-height: 100vh;
+    height: auto;
+    background-color: rgba(255, 245, 184, 0.95);
+    padding: 30px 20px;
+    border-radius: 0 10px 10px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    overflow: auto;
+    z-index: 2;
+}
+
+
+ .bg-image {
+    margin-left: 300px;
+    flex: 1;
+    height: 100vh;
+    background-image: url('./assets/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container h1 {
+    font-family: monospace;
+    font-size: 28px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+button {
+    display: block;
+    margin-top: 10px;
+    cursor: pointer;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(243, 236, 130);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: rgb(255, 132, 65);
+    transform: translateY(-2px);
+}
+
+.container input {
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+}
+
+/* -----------------------results------------------------- */
+
+#resultado h2.result-info {
+    text-align: center;
+    font-size: 15px; 
+    margin: 10px 20px; 
+    color: #333;             
+}
+
+.result-block {
+    display: flex;               /* imagem + texto lado a lado */
+    align-items: center;         /* verticalmente alinhados */
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #444;
+}
+
+/* espaço entre ícone e texto */
+.result-block img {
+    width: 30px;                 /* largura do ícone */
+    height: 30px;                /* altura do ícone */
+    margin-right: 10px;          /* distância entre ícone e texto */
+}
+
+.result-block p {
+    margin: 0;         
+}
+
+
+/* Palette color
+
+red rgba(245, 11, 10)
+blue rgba(245, 11, 10)
+orange rgba(255, 132, 65)
+pink rgba(255, 155, 143)
+yellow rgba(255, 195, 75)
+green rgba(115, 194, 85) */
